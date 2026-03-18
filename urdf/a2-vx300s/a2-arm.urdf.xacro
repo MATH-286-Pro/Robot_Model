@@ -6,8 +6,8 @@
     a2.urdf.xacro and vx300s.urdf.xacro must be converted into xacro macros
     before the xacro:a2 / xacro:vx300s calls below can work.
   -->
-  <xacro:include filename="$(find combine)/a2.urdf.xacro"/>
-  <xacro:include filename="$(find combine)/vx300s.urdf.xacro"/>
+  <xacro:include filename="a2.urdf.xacro"/>
+  <xacro:include filename="vx300s.urdf.xacro"/>
 
   <!--
     Expected link names in the current models:

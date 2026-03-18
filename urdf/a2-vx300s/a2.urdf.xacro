@@ -1,4 +1,6 @@
-<robot name="a2">
+<?xml version="1.0"?>
+<robot name="a2" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:macro name="a2">
 
   <!-- [CAUTION] uncomment when convert to mujoco -->
   <!-- <mujoco>
@@ -1058,4 +1060,5 @@
     <axis
       xyz="0 0 0" />
   </joint>
+  </xacro:macro>
 </robot>
