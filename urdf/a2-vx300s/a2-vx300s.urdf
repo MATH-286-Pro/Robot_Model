@@ -1362,7 +1362,6 @@
       <inertia ixx="0.0001" iyy="0.0001" izz="0.0001" ixy="0" ixz="0" iyz="0"/>
     </inertial>
   </link>
-
   <link name="vx300s_left_finger_link">
     <visual>
       <origin rpy="1.5707963267948966 -3.141592653589793 1.5707963267948966" xyz="-0.0404 -0.0575 0"/>
@@ -1383,7 +1382,6 @@
       <inertia ixx="0.0000243300" iyy="0.0000125500" izz="0.0000141700" ixy="-0.0000024004" ixz="0.0000000000" iyz="0.0000000000"/>
     </inertial>
   </link>
-
   <link name="vx300s_right_finger_link">
     <visual>
       <origin rpy="-1.5707963267948966 3.141592653589793 -1.5707963267948966" xyz="-0.0404 0.0575 0 "/>
@@ -1416,8 +1414,8 @@
   <!-- Joints -->
   <joint name="left_finger_joint" type="prismatic">
     <axis xyz="0 1 0"/>
-    <limit effort="5" lower="0.021" upper="0.057" velocity="1"/>
-    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <limit effort="5" lower="0" upper="0.036" velocity="1"/>
+    <origin rpy="0 0 0" xyz="0 0.021 0"/>
     <parent link="vx300s_fingers_link"/>
     <child link="vx300s_left_finger_link"/>
     <dynamics friction="0.1"/>
@@ -1434,8 +1432,8 @@
 
   <joint name="right_finger_joint" type="prismatic">
     <axis xyz="0 -1 0"/>
-    <limit effort="5" lower="0.021" upper="0.057" velocity="1"/>
-    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <limit effort="5" lower="0" upper="0.036" velocity="1"/>
+    <origin rpy="0 0 0" xyz="0 -0.021 0"/>
     <parent link="vx300s_fingers_link"/>
     <child link="vx300s_right_finger_link"/>
     <dynamics friction="0.1"/>
