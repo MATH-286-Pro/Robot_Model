@@ -1078,9 +1078,15 @@
       <material name="interbotix_black"/>
     </visual>
     <collision>
-      <origin rpy="0 0 1.5707963267948966" xyz="0 0 0"/>
+      <origin rpy="0 0 0" xyz="-0.13206 0 0.0315"/>
       <geometry>
-        <mesh filename="meshes/vx300s_1_base.stl" scale="0.001 0.001 0.001"/>
+        <box size="0.115 0.082 0.045"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0.0425"/>
+      <geometry>
+        <cylinder radius="0.069" length="0.067"/>
       </geometry>
     </collision>
     <inertial>
@@ -1115,9 +1121,9 @@
       <material name="interbotix_black"/>
     </visual>
     <collision>
-      <origin rpy="0 0 1.5707963267948966" xyz="0 0 -0.003"/>
+      <origin rpy="0 0 0" xyz="0.0007 0 0.03225"/>
       <geometry>
-        <mesh filename="meshes/vx300s_2_shoulder.stl" scale="0.001 0.001 0.001"/>
+        <box size="0.0335 0.102 0.0585"/>
       </geometry>
     </collision>
     <inertial>
@@ -1152,9 +1158,15 @@
       <material name="interbotix_black"/>
     </visual>
     <collision>
-      <origin rpy="0 0 1.5707963267948966" xyz="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0 0 0.175"/>
       <geometry>
-        <mesh filename="meshes/vx300s_3_upper_arm.stl" scale="0.001 0.001 0.001"/>
+        <box size="0.020 0.040 0.295"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.041875 0 0.3"/>
+      <geometry>
+        <box size="0.06375 0.1012 0.0419"/>
       </geometry>
     </collision>
     <inertial>
@@ -1189,9 +1201,9 @@
       <material name="interbotix_black"/>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0.109755 0 0"/>
       <geometry>
-        <mesh filename="meshes/vx300s_4_upper_forearm.stl" scale="0.001 0.001 0.001"/>
+        <box size="0.166791 0.0452 0.0315"/>
       </geometry>
     </collision>
     <inertial>
@@ -1226,9 +1238,9 @@
       <material name="interbotix_black"/>
     </visual>
     <collision>
-      <origin rpy="3.141592653589793 0 0" xyz="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0.0587 0 0"/>
       <geometry>
-        <mesh filename="meshes/vx300s_5_lower_forearm.stl" scale="0.001 0.001 0.001"/>
+        <box size="0.118 0.1 0.0395"/>
       </geometry>
     </collision>
     <inertial>
@@ -1263,9 +1275,9 @@
       <material name="interbotix_black"/>
     </visual>
     <collision>
-      <origin rpy="0 0 1.5707963267948966" xyz="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0.051 0 0.012"/>
       <geometry>
-        <mesh filename="meshes/vx300s_6_wrist.stl" scale="0.001 0.001 0.001"/>
+        <box size="0.034 0.055 0.0465"/>
       </geometry>
     </collision>
     <inertial>
@@ -1300,9 +1312,9 @@
       <material name="interbotix_black"/>
     </visual>
     <collision>
-      <origin rpy="0 0 1.5707963267948966" xyz="-0.02 0 0"/>
+      <origin rpy="0 0 0" xyz="0.05435 0 0"/>
       <geometry>
-        <mesh filename="meshes/vx300s_7_gripper.stl" scale="0.001 0.001 0.001"/>
+        <box size="0.0447 0.150 0.046"/>
       </geometry>
     </collision>
     <inertial>
@@ -1323,7 +1335,6 @@
       <inertia ixx="0.0001" iyy="0.0001" izz="0.0001" ixy="0" ixz="0" iyz="0"/>
     </inertial>
   </link>
-
   <joint name="gripper_bar" type="fixed">
     <axis xyz="1 0 0"/>
     <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -1338,12 +1349,12 @@
       </geometry>
       <material name="interbotix_black"/>
     </visual>
-    <collision>
-      <origin rpy="0 0 1.5707963267948966" xyz="-0.063 0 0"/>
+    <!-- <collision>
+      <origin rpy="0 0 0" xyz="-0.063 0 0"/>
       <geometry>
-        <mesh filename="meshes/vx300s_9_gripper_bar.stl" scale="0.001 0.001 0.001"/>
+        <box size="0.13 0.02 0.015"/>
       </geometry>
-    </collision>
+    </collision> -->
     <inertial>
       <origin rpy="0 0 1.5707963267948966" xyz="0.0067940000 -0.0000004272 -0.0007760000"/>
       <mass value="0.150986"/>
@@ -1371,9 +1382,9 @@
       <material name="interbotix_black"/>
     </visual>
     <collision>
-      <origin rpy="1.5707963267948966 -3.141592653589793 1.5707963267948966" xyz="-0.0404 -0.044 0"/>
+      <origin rpy="0 0 0" xyz="0.038 0.01 0"/>
       <geometry>
-        <mesh filename="meshes/vx300s_10_gripper_finger.stl" scale="0.001 0.001 0.001"/>
+        <box size="0.06 0.0205 0.061"/>
       </geometry>
     </collision>
     <inertial>
@@ -1391,9 +1402,9 @@
       <material name="interbotix_black"/>
     </visual>
     <collision>
-      <origin rpy="-1.5707963267948966 3.141592653589793 -1.5707963267948966" xyz="-0.0404 0.044 0"/>
+      <origin rpy="0 0 0" xyz="0.038 -0.01 0"/>
       <geometry>
-        <mesh filename="meshes/vx300s_10_gripper_finger.stl" scale="0.001 0.001 0.001"/>
+        <box size="0.06 0.0205 0.061"/>
       </geometry>
     </collision>
     <inertial>
